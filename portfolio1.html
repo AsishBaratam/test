@@ -1,0 +1,400 @@
+ <html>
+    <head>
+        <title>
+                personal portfolio
+        </title>
+        <script src="https://kit.fontawesome.com/bce4fde376.js" crossorigin="anonymous"></script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Times New Roman', Times, serif;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: black;
+                color: white;
+            }
+            #header{
+                width:100%;
+                height: 100vh;
+                background-image: url(asish.jpeg);
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+            .container{
+                    padding:10px 10%;
+                    }
+                    nav{
+                        display: flex;
+                        align-items: center;
+                        justify-content:space-between;
+                        flex-wrap: wrap;
+                    }
+                nav ul li a {
+                        
+                        padding: 20px;
+                       list-style-type:none ;
+                        text-decoration:none; 
+                        color: black;
+
+
+                    }
+                    ul li{
+                        display: inline;
+                        
+                       
+                    }
+                   .logo{
+                    width:80px;
+                    height:80px;
+                    border-radius: 48%;
+                   
+                   }
+                   ul li a:hover{
+                    color:aqua;
+                    
+                   }
+                   .intro{
+                        
+                        margin-left: 100px;
+                        margin-top: 100px;
+                        font-size: 30px;
+                   }
+                   ul li :hover{
+                    color: aquamarine;
+                   }
+
+                   .wrapper{
+			display: flex;
+			width: 100%;
+			margin-top:0px;
+			height: calc(100vh - 80px);
+			align-items: center;
+			padding: 10%;
+			margin-top:35px;
+		}
+		.cols{
+			width: 50%;
+		}
+		.topline{
+			font-size: 25px;
+			letter-spacing:5px;
+		}
+		h1{
+			font-size: 100px;
+			font-weight: 900;
+			color: black;
+		}
+		.multiText{
+			color: purple;
+			text-transform: capitalize;
+		}
+		button{
+			cursor: pointer;
+			font-size: 25px;
+			font-weight: 400;
+			color: white;
+			background-color: black;
+			padding: 8px 14px;
+			margin: 40px 5px;
+			letter-spacing: 2px;
+			text-transform: capitalize;
+		}
+		button:hover{
+			background-color: purple;
+		}
+		.about{   
+			position: absolute;
+			width: 90%;
+			margin-top:30px;
+			text-align: center;
+			padding-top: 100px;
+			justify-content: center;
+			display: flex;
+		}
+        .ab h1{
+            color:aliceblue;
+            font-size: 60px;
+            align-items: center;
+        }
+		
+		.skill{
+			margin-top:700px;
+			text-align: center;
+			padding-left: 70px;
+			width: 95%;
+			padding-top: 60px;
+		}
+		/* .blog-content h1 {
+			padding-left: 450px;;
+			padding-bottom:30px;
+			font-size:80px;
+		}
+		.blog-content p{
+			padding: 100px;
+			justify-content: center;
+		}
+		h3{
+			text-align: center;
+			font-weight: 600;
+			margin: 10px;
+		}
+		.row{
+			margin-top: 5%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.course-col{
+			flex-basis: 31%;
+			background: lightblue;
+			border-radius: 10px;
+			margin-bottom:10%;
+			padding: 20px 12px;
+			padding-bottom:150px;
+			box-sizing: border-box;
+			transition: background 1s transform 1s;
+		}
+		.course-col:hover{
+			background:purple;
+			transform:translateY(-10px);
+			cursor: pointer;
+		}
+		.imgbox{
+			float:right;
+			height:300px;
+		}
+		.imgbox img{
+			overline:hidden;
+			position: relative;
+			height: 120%;
+			width: calc(100% - 10px);
+			top: -40px;
+			right: 30px;
+		}
+		.btns a{
+			text-decoration:none;
+			color:white;
+		}
+		.about-img{
+			padding-top:20px;
+			margin-left:50px;
+		}
+		.about-img img{
+			height:80%;
+		}
+		.tech{
+			display:inline; 	
+			margin-left:370px;
+		}
+		.tech iconify-icon{
+			transition: background 2s transform 1s;
+		}
+		.tech iconify-icon:hover{
+			transform:translateY(-10px);
+		}
+		#loader{
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			background: #000 url('preloader.webp') no-repeat center;
+			background-size:40%;
+			z-index: 999;
+		}
+		//contact
+		.container1{
+			padding-top: 100px;
+			margin-left:80px;
+		}
+		.content{
+			margin-top:30px;
+			margin-bottom:10px;
+			text-align: center;
+			padding-left:70px;
+			width:95%;
+			padding-top: 50px;
+		}
+		//form
+		.container1{
+			width:100%;
+			height:100vh;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}
+		form{
+			background:url(https://images.saymedia-content.com/.image/t_share/MTkzOTUzODU0MDkyODc5MzY1/particlesjs-examples.gif);
+			display:flex;
+			flex-direction:column;
+			padding:2vw 4vw;
+			width:80%;
+			height:90%;
+			max-width:500px;
+			border-radius:10px;
+			margin-left:420px;
+			margin-bottom:100px;
+		}
+		form input,form textarea{
+			border:0;
+			margin:10px 0;
+			padding:20px;
+			outline:none;
+			font-size:16px;
+		}
+		form .sub{
+			background-color:black;
+			color:white;
+		}
+		#cot{
+			color:green;
+			margin-top:0px;
+			display:block;
+			text-align:center;
+		}
+		footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+			height:10%;
+        } */
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container"> 
+                <nav style="font-family:;">
+                    <img src="a.jpeg" class="logo">
+                    <ul class="list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="ff.jpeg">About</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            
+            
+            <div class="intro"><h1><i class="fa-solid fa-house" ></i>Hi, I'm <b style="color:violet">Asish</b></h1><br>
+                <h4>I develop portfolio website<br> using HTML CSS & JS</h4>
+            </div>
+        </div>
+    
+        <!-- <section class="about" id="abt">
+            <div class="ab">
+                <h1 >About Me...</h1>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aspernatur ratione, alias temporibus accusantium quae rerum porro earum voluptatibus ex. Illum velit architecto ut totam similique ullam reiciendis quo impedit.</p>
+            
+            </div></section>
+            <div id="footer">
+                <footer>
+                    <p>&copy; 2024 My Website. All rights reserved.</p>
+                </footer>
+            </div> -->
+            
+				<!-- about section-->
+				<section id="about">
+					<div class="container mt-4 pt-4">
+						<h1 class="text-center">About Me</h1>
+						<div class="row mt-4">
+							<div class="col-lg-4">
+								<img src="images/about.jpeg" class= "imageAboutPage" alt="">
+							</div>
+			
+							<div class="col-lg-8">
+								<p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+									
+								</p>
+								<div class="row mt-3">
+									<div class="col-md-6">
+										<ul>
+											<li>Name: David Parker</li>
+											<li>Age: 28</li>
+											<li>Occupation: Web Developer</li>
+			
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<ul>
+											<li>Name: David Parker</li>
+											<li>Age: 28</li>
+											<li>Occupation: Web Developer</li>
+			
+										</ul>
+									</div>
+								</div>
+								<div class="row mt-3">
+									<p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+										Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+									</p>
+								</div>
+							</div>
+						</div>
+				</section>
+
+
+            
+            <section id="courses">
+
+            </section>
+            <section id="myprojects">
+
+            </section>
+            <section id="contac">
+
+            </section>
+        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+        <script>
+            var typingEffect =new Typed(".multiText",{
+                strings : ["Coder","Developer","DataAnalyst"],
+                loop:true,
+                typeSpeed :100,
+                backSpeed :80,
+                backDelay :1500
+            })
+        </script>
+        <script>
+            var loader;
+            function loadNow(opacity) {
+                if (opacity <= 0) {
+                    displayContent();
+                } else {
+                    loader.style.opacity = opacity;
+                    window.setTimeout(function() {
+                        loadNow(opacity - 0.05);
+                    }, 50);
+                }
+            }
+            function displayContent() {
+                loader.style.display = 'none';
+                document.getElementById('container').style.display = 'block';
+            }
+            document.addEventListener("DOMContentLoaded", function() {
+                loader = document.getElementById('loader');
+                loadNow(1);
+            });
+        </script>
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbxvg2yGpTfDtlOeGpnqPNgFEJFu6WRzC0o1LurEl1UeObrysgCpRfCeXJGobWLxP_b_/exec'
+          const form = document.forms['submit-to-google-sheet']
+          const msg=document.getElementById("msg")
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response =>{
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+              })
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script>
+    </body>
+    </html>
+    </body>
+</html>
